@@ -1,9 +1,10 @@
-import Nav from './Nav'
+import Nav from "./Nav";
 
-export default function Layout({}) {
-    return(
-        <div>
-            <Nav />
-        </div>
-    )
+export default function Layout({ children }) {
+  return (
+    <div className="mx-6 md:max-w-2xl md:mx-auto font-poppins">
+      <Nav />
+      <main>{children}</main>
+    </div>
+  );
 }
